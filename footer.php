@@ -1,4 +1,10 @@
-<!-- begin footer -->
+<?php
+/**
+ * The template for displaying the footer.
+ * 
+ * @package blm_basic
+ */
+?>
 <footer>
 	
 	<div class="col">

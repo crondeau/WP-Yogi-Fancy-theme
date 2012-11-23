@@ -1,4 +1,5 @@
 WP Yogi Fancy theme
+====================
 
 This theme was created as part of a tutorial provided at WPyogi.com.
 
