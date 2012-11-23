@@ -43,17 +43,42 @@ function blm_page_menu_args( $args ) {
 add_filter( 'wp_page_menu_args', 'blm_page_menu_args' );
 
 function blm_register_sidebars() {
-	register_sidebar(
-		array(
-			'id' => 'primary',
-			'name' => __( 'Primary Sidebar', 'blm_basic' ),
-			'description' => __( 'The following widgets will appear in the main sidebar div.', 'blm_basic' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget' => '</aside>',
-			'before_title' => '<h4>',
-			'after_title' => '</h4>'
-		)
-	);
+	register_sidebar( array(
+		'id' => 'primary',
+		'name' => __( 'Primary Sidebar', 'blm_basic' ),
+		'description' => __( 'The following widgets will appear in the main sidebar div.', 'blm_basic' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h4>',
+		'after_title' => '</h4>'
+	));
+	register_sidebar( array(
+		'id' => 'first-footer-widget-area',
+		'name' => __( 'First Footer Widget Area', 'blm_basic' ),
+		'description' => __( 'The first footer widget area', 'blm_basic' ),
+		'before_widget' => '<div id="%1$s" class="col">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4>',
+		'after_title' => '</h4>',
+	) );
+	register_sidebar( array(
+		'id' => 'second-footer-widget-area',
+		'name' => __( 'Second Footer Widget Area', 'blm_basic' ),
+		'description' => __( 'The second footer widget area', 'blm_basic' ),
+		'before_widget' => '<div id="%1$s" class="col">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4>',
+		'after_title' => '</h4>',
+	) );
+	register_sidebar( array(
+		'id' => 'third-footer-widget-area',
+		'name' => __( 'Third Footer Widget Area', 'blm_basic' ),
+		'description' => __( 'The third footer widget area', 'blm_basic' ),
+		'before_widget' => '<div id="%1$s" class="col last">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4>',
+		'after_title' => '</h4>',
+	) );
 }
 
 function blm_init_method() {

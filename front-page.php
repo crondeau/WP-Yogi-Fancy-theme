@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying a static front page.
+ * 
+ * @link http://codex.wordpress.org/Template_Hierarchy#Front_Page_display
+ * @package blm_basic
+ */
+
+get_header(); ?>
 
 <div id="main">
 	
@@ -14,15 +22,15 @@
 	
 	<section class="column first">
 					
-			<?php 
-				$new_query_1 = new WP_Query();
-				$new_query_1->query(array('page_id' => 46));
-				// you will need to change the id of these pages.. these numbers most likely won't work for you.
-				while ($new_query_1->have_posts()) : $new_query_1->the_post(); ?>
+		<?php 
+			$new_query_1 = new WP_Query();
+			$new_query_1->query( array( 'page_id' =>  46 ) );
+			// you will need to change the id of these pages.. these numbers most likely won't work for you.
+			while ($new_query_1->have_posts()) : $new_query_1->the_post(); ?>
 				<h2><?php the_title(); ?></h2>
 				<?php the_content();
-				endwhile;
-			wp_reset_query(); ?>
+			endwhile;
+		wp_reset_query(); ?>
 			
 	</section>
 	
@@ -30,11 +38,11 @@
 		
 		<?php 
 			$new_query_2 = new WP_Query();
-			$new_query_2->query(array('page_id' => 44));
+			$new_query_2->query( array( 'page_id' => 44 ) );
 			// you will need to change the id of these pages.. these numbers most likely won't work for you.
-			while ($new_query_2->have_posts()) : $new_query_2->the_post(); ?>
-			<h2><?php the_title(); ?></h2>
-			<?php the_content();
+			while ( $new_query_2->have_posts()) : $new_query_2->the_post(); ?>
+				<h2><?php the_title(); ?></h2>
+				<?php the_content();
 			endwhile;
 		wp_reset_query(); ?>
 		

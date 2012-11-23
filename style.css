@@ -462,6 +462,7 @@ footer a {
 }
 
 footer a:hover {
+	color:#FFF;
 	text-decoration:underline;
 }
 
@@ -475,10 +476,6 @@ footer a:hover {
 	padding-right:0px;
 	width:200px;	
 } 
-
-footer .last a {
-	color:#9b63a1;
-}
 
 footer h4 {
 	color:#FFF;
