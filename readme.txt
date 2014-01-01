@@ -3,12 +3,12 @@ WP Yogi Fancy theme
 
 This theme was created as part of a tutorial provided at WPyogi.com.
 
-http://www.wpyogi.com/2011/11/make-your-custom-theme-fancy/
+http://wpyogi.com/2011/11/make-your-custom-theme-fancy/
 
 This theme is the third one in a series.
 
 You can check out a demo of the theme here.
-http://fancy.wpyogi.com/
+http://wpyogi.com/fancy/
  
 
 
